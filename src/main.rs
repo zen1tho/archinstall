@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Initialising Archinstall v0.1");
 }
