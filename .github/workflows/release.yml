@@ -19,8 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PAT }}
         with:
           RUSTTARGET: ${{ matrix.target }}
-
-    steps:
       - name: Create GitHub release
         uses: Roang-zero1/github-create-release-action@v3
         with:
