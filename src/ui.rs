@@ -65,8 +65,6 @@ where
         .split(area);
     let block = Block::default().borders(Borders::ALL).title("Partitioning");
     f.render_widget(block, area);
-
-    let label = format!("{:.2}%", app.progress * 100.0);
     let gauge = Gauge::default()
         .block(Block::default().title("Gauge:"))
         .gauge_style(
@@ -75,7 +73,7 @@ where
                 .bg(Color::Black)
                 .add_modifier(Modifier::ITALIC | Modifier::BOLD),
         )
-        .label(label)
+        .label("label")
         .ratio(app.progress);
     f.render_widget(gauge, chunks[0]);
 }

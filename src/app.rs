@@ -247,7 +247,7 @@ impl<'a> App<'a> {
         App {
             title,
             should_quit: false,
-            tabs: TabsState::new(vec!["Configuration", "Install", "Extra Config"]),
+            tabs: TabsState::new(vec!["Configuration", "Install", "Post-Install"]),
             show_chart: true,
             progress: 0.0,
             sparkline: Signal {
